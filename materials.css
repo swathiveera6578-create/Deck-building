@@ -1,0 +1,1931 @@
+/* =========================================================
+   TIMBERNEST | MATERIALS & PRICING
+   COMPLETE PAGE CSS
+   WOOD BUTTON + TIMBERNEST COLOR SYSTEM
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.materials-hero {
+    min-height: 650px !important;
+    width: 100%;
+
+    display: flex !important;
+    align-items: center !important;
+
+    background: #FAF8F3;
+
+    overflow: hidden;
+}
+
+
+.materials-hero-container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 55px;
+}
+
+
+.materials-hero-content {
+    width: 100%;
+
+    color: #252A26 !important;
+}
+
+
+/* =========================================================
+   HERO LABEL WITH HORIZONTAL LINE
+========================================================= */
+
+.materials-hero .section-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+    padding: 0;
+
+    background: transparent !important;
+
+    border: none;
+
+    border-radius: 0;
+
+    color: #B7793E !important;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.materials-hero .section-label::before {
+    content: "";
+
+    width: 35px;
+
+    height: 1px;
+
+    background: #B7793E;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   HERO HEADING
+========================================================= */
+
+.materials-hero h1 {
+    max-width: 650px;
+
+    margin: 0 0 22px !important;
+
+    color: #252A26 !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(44px, 6vw, 72px) !important;
+
+    font-weight: 600;
+
+    line-height: 1.15 !important;
+}
+
+
+.materials-hero h1 span {
+    display: block;
+
+    color: #2F5D3A !important;
+}
+
+
+/* =========================================================
+   HERO PARAGRAPH
+========================================================= */
+
+.materials-hero p {
+    max-width: 560px;
+
+    margin: 0 0 30px !important;
+
+    color: #697169 !important;
+
+    font-size: 17px !important;
+
+    font-weight: 400;
+
+    line-height: 1.7 !important;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.materials-hero-image {
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+
+.materials-hero-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   HERO BUTTON
+========================================================= */
+
+.materials-btn {
+    display: inline-flex !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 175px;
+
+    padding: 14px 28px !important;
+
+    border: 1px solid #B7793E !important;
+
+    border-radius: 8px !important;
+
+    background: #B7793E !important;
+
+    color: #FFFFFF !important;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-decoration: none !important;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    position: relative !important;
+
+    overflow: hidden !important;
+}
+
+
+.materials-btn:hover {
+    background: #945D2D !important;
+
+    border-color: #945D2D !important;
+
+    color: #FFFFFF !important;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(148, 93, 45, 0.25);
+}
+
+
+/* =========================================================
+   HERO BUTTON SHINE
+========================================================= */
+
+.materials-btn::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 55%;
+
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.7s ease;
+
+    pointer-events: none;
+}
+
+
+.materials-btn:hover::after {
+    left: 140%;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.materials-intro {
+    width: 100%;
+
+    padding: 95px 0 !important;
+
+    background: #FAF8F3;
+}
+
+
+.materials-intro-grid {
+    width: min(1200px, 88%) !important;
+
+    margin: 0 auto !important;
+
+    display: grid !important;
+
+    grid-template-columns: 1.4fr 0.6fr !important;
+
+    gap: 70px !important;
+
+    align-items: center;
+}
+
+
+.intro-text {
+    width: 100%;
+}
+
+
+/* =========================================================
+   SECTION LABELS
+========================================================= */
+
+.intro-text .section-label,
+.section-heading .section-label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #B7793E !important;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   INTRO HEADING
+========================================================= */
+
+.intro-text h2 {
+    margin: 0 0 20px !important;
+
+    color: var(--primary) !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(32px, 4vw, 48px) !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.2 !important;
+}
+
+
+.intro-text h2 span {
+    color: #B7793E !important;
+}
+
+
+/* =========================================================
+   INTRO PARAGRAPH
+========================================================= */
+
+.intro-text p {
+    margin: 0 0 16px !important;
+
+    color: var(--muted) !important;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   HIGHLIGHT CARD
+========================================================= */
+
+.material-highlight {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 42px 30px;
+
+    border: 1px solid #DEDAD0;
+
+    border-radius: 24px;
+
+    background: #FFFFFF;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(47, 93, 58, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.material-highlight:hover {
+    transform: translateY(-8px);
+
+    border-color: #B7793E;
+
+    box-shadow:
+        0 25px 50px rgba(148, 93, 45, 0.15);
+}
+
+
+.highlight-icon {
+    width: 68px;
+
+    height: 68px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(183, 121, 62, 0.12);
+
+    color: #B7793E;
+}
+
+
+.highlight-icon svg {
+    width: 32px;
+
+    height: 32px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 2;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+.material-highlight h3 {
+    margin: 0 0 12px;
+
+    color: var(--primary) !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+
+    font-weight: 600 !important;
+}
+
+
+.material-highlight p {
+    margin: 0;
+
+    color: var(--muted) !important;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MATERIAL TYPES SECTION
+========================================================= */
+
+.material-types {
+    width: 100%;
+
+    padding: 100px 0 !important;
+
+    background: #F2F5EF;
+}
+
+
+.material-types > .site-container {
+    width: min(1200px, 88%) !important;
+
+    margin: 0 auto !important;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto 55px !important;
+
+    text-align: center;
+}
+
+
+.section-heading .section-label {
+    color: #B7793E !important;
+}
+
+
+.section-heading h2 {
+    margin: 0 0 15px !important;
+
+    color: var(--primary) !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(34px, 4vw, 48px) !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.2;
+}
+
+
+.section-heading h2 span {
+    color: #B7793E !important;
+}
+
+
+.section-heading p {
+    margin: 0;
+
+    color: var(--muted) !important;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MATERIAL GRID
+========================================================= */
+
+.materials-grid {
+    width: 100%;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 26px !important;
+
+    align-items: stretch !important;
+}
+
+
+/* =========================================================
+   MATERIAL CARD
+========================================================= */
+
+.material-card {
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border: 1px solid #DEDAD0;
+
+    border-radius: 18px;
+
+    background: #FFFFFF;
+
+    box-shadow:
+        0 12px 35px rgba(35, 55, 40, 0.09);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+.material-card:hover {
+    transform: translateY(-9px);
+
+    border-color: #B7793E;
+
+    box-shadow:
+        0 24px 50px rgba(148, 93, 45, 0.16);
+}
+
+
+/* =========================================================
+   MATERIAL IMAGE
+========================================================= */
+
+.material-image {
+    position: relative;
+
+    width: 100% !important;
+
+    height: 270px !important;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+}
+
+
+.material-image img {
+    width: 100% !important;
+
+    height: 100% !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+
+    object-position: center !important;
+
+    transition: transform 0.6s ease;
+}
+
+
+.material-card:hover .material-image img {
+    transform: scale(1.08);
+}
+
+
+.material-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.28),
+            transparent 50%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   MATERIAL CONTENT
+========================================================= */
+
+.material-content {
+    flex: 1;
+
+    min-height: 255px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    padding: 25px;
+
+    background: #FFFFFF;
+}
+
+
+.material-number {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #B7793E !important;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+.material-content h3 {
+    margin: 0 0 12px !important;
+
+    color: var(--primary) !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 23px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.2;
+}
+
+
+.material-content p {
+    margin: 0 0 15px !important;
+
+    color: var(--muted) !important;
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+
+.material-features {
+    margin-top: auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px 12px;
+}
+
+
+.material-features span {
+    color: var(--primary) !important;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   PRICING SECTION
+========================================================= */
+
+.pricing-section {
+    width: 100%;
+
+    padding: 100px 0 !important;
+
+    background: #FAF8F3;
+}
+
+
+.pricing-section > .site-container {
+    width: min(1200px, 88%) !important;
+
+    margin: 0 auto !important;
+}
+
+
+.pricing-grid {
+    width: 100%;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 28px !important;
+
+    align-items: stretch !important;
+}
+
+
+/* =========================================================
+   PRICING CARD
+========================================================= */
+
+.price-card {
+    position: relative;
+
+    min-width: 0;
+
+    min-height: 530px;
+
+    height: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 38px 30px;
+
+    border: 1px solid #DEDAD0;
+
+    border-radius: 22px;
+
+    background: #FFFFFF;
+
+    box-shadow:
+        0 15px 40px rgba(47, 93, 58, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+.price-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #B7793E;
+
+    box-shadow:
+        0 25px 55px rgba(148, 93, 45, 0.15);
+}
+
+
+/* =========================================================
+   REMOVE FEATURED HIGHLIGHT
+========================================================= */
+
+.price-card.featured {
+    border: 1px solid #DEDAD0;
+
+    box-shadow:
+        0 15px 40px rgba(47, 93, 58, 0.08);
+
+    transform: none;
+}
+
+
+.price-card.featured:hover {
+    transform: translateY(-8px);
+
+    border-color: #B7793E;
+
+    box-shadow:
+        0 25px 55px rgba(148, 93, 45, 0.15);
+}
+
+
+/* =========================================================
+   FEATURED BADGE
+========================================================= */
+
+.featured-badge {
+    position: absolute;
+
+    top: -14px;
+
+    right: 25px;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    background: #B7793E;
+
+    color: #FFFFFF;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   PRICE CARD TOP
+========================================================= */
+
+.price-card-top {
+    min-height: 215px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.price-label {
+    display: block;
+
+    color: #B7793E !important;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.price-card h3 {
+    margin: 13px 0;
+
+    color: var(--primary) !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+.price {
+    margin: 8px 0 15px;
+
+    color: var(--primary) !important;
+
+    font-size: 34px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+.price-card-top p {
+    min-height: 65px;
+
+    margin: 0;
+
+    color: var(--muted) !important;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PRICE FEATURES
+========================================================= */
+
+.price-features {
+    flex: 1;
+
+    margin: 22px 0 !important;
+
+    padding: 0 !important;
+
+    list-style: none;
+}
+
+
+.price-features li {
+    padding: 10px 0;
+
+    border-bottom: 1px solid #ECE8DF;
+
+    color: #252A26 !important;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   PRICE BUTTON
+========================================================= */
+
+.price-btn {
+    width: 100% !important;
+
+    min-height: 50px;
+
+    margin-top: auto;
+
+    box-sizing: border-box;
+
+    padding: 14px 20px !important;
+
+    border: 1px solid #B7793E !important;
+
+    border-radius: 8px !important;
+
+    background: #B7793E !important;
+
+    color: #FFFFFF !important;
+
+    text-align: center;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-decoration: none !important;
+
+    position: relative !important;
+
+    overflow: hidden !important;
+}
+
+
+.price-btn:hover {
+    background: #945D2D !important;
+
+    border-color: #945D2D !important;
+
+    color: #FFFFFF !important;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(148, 93, 45, 0.25);
+}
+
+
+/* =========================================================
+   PRICE BUTTON SHINE
+========================================================= */
+
+.price-btn::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 55%;
+
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.7s ease;
+
+    pointer-events: none;
+}
+
+
+.price-btn:hover::after {
+    left: 140%;
+}
+
+
+/* =========================================================
+   MATERIAL COMPARISON
+========================================================= */
+
+.material-comparison {
+    width: 100%;
+
+    padding: 100px 0 !important;
+
+    background: #F2F5EF;
+}
+
+
+.material-comparison > .site-container {
+    width: min(1200px, 88%) !important;
+
+    margin: 0 auto !important;
+}
+
+
+.comparison-table-wrapper {
+    max-width: 1200px;
+
+    margin: 45px auto 0;
+
+    overflow-x: auto;
+
+    background: #FFFFFF;
+
+    border: 1px solid #DEDAD0;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(30, 55, 35, 0.08);
+}
+
+
+.comparison-table {
+    width: 100%;
+
+    min-width: 760px;
+
+    border-collapse: collapse;
+
+    text-align: left;
+}
+
+
+.comparison-table th {
+    padding: 19px 20px;
+
+    background: #2F5D3A;
+
+    color: #FFFFFF;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+
+.comparison-table td {
+    padding: 20px;
+
+    border-bottom: 1px solid #DEDAD0;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+.comparison-table tbody tr {
+    transition: background 0.3s ease;
+}
+
+
+.comparison-table tbody tr:hover {
+    background: #F5EFE8;
+}
+
+
+.comparison-table td strong {
+    color: var(--primary);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+.comparison-good {
+    color: var(--primary);
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PROCESS SECTION
+========================================================= */
+
+.materials-process {
+    width: 100%;
+
+    padding: 100px 0 !important;
+
+    background: #F2F5EF;
+}
+
+
+.materials-process > .site-container {
+    width: min(1200px, 88%) !important;
+
+    margin: 0 auto !important;
+}
+
+
+.process-grid {
+    width: 100%;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 25px !important;
+
+    align-items: stretch !important;
+}
+
+
+.process-card {
+    min-height: 250px;
+
+    box-sizing: border-box;
+
+    padding: 30px 25px;
+
+    border: 1px solid #DEDAD0;
+
+    border-radius: 18px;
+
+    background: #FFFFFF;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.process-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #B7793E;
+
+    box-shadow:
+        0 18px 40px rgba(148, 93, 45, 0.10);
+}
+
+
+.process-number {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 45px;
+
+    height: 45px;
+
+    margin-bottom: 18px;
+
+    border-radius: 50%;
+
+    background: rgba(183, 121, 62, 0.12);
+
+    color: #B7793E;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.process-icon {
+    width: 48px;
+
+    height: 48px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #B7793E;
+}
+
+
+.process-icon svg {
+    width: 34px;
+
+    height: 34px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 2;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+.process-card h3 {
+    margin: 0 0 12px;
+
+    color: var(--primary) !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 21px;
+
+    font-weight: 600;
+}
+
+
+.process-card p {
+    margin: 0;
+
+    color: var(--muted) !important;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.materials-cta {
+    position: relative;
+
+    min-height: 500px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    background-color: #304D37;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=2000&q=90") !important;
+
+    background-size: cover !important;
+
+    background-position: center !important;
+
+    background-repeat: no-repeat !important;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+.materials-cta-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(18, 42, 27, 0.80);
+}
+
+
+.materials-cta-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(800px, 88%);
+
+    color: #FFFFFF;
+}
+
+
+.materials-cta .section-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #B7793E !important;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.materials-cta h2 {
+    margin: 0 0 18px;
+
+    color: #FFFFFF !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(36px, 5vw, 56px);
+
+    font-weight: 600;
+
+    line-height: 1.15;
+}
+
+
+.materials-cta p {
+    max-width: 620px;
+
+    margin: 0 auto 28px;
+
+    color: #FFFFFF !important;
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.materials-cta .materials-btn {
+    background: #B7793E !important;
+
+    border-color: #B7793E !important;
+
+    color: #FFFFFF !important;
+}
+
+
+.materials-cta .materials-btn:hover {
+    background: #945D2D !important;
+
+    border-color: #945D2D !important;
+
+    color: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .materials-hero {
+    background: #111711;
+}
+
+
+body.dark-mode .materials-intro,
+body.dark-mode .pricing-section {
+    background: #111711;
+}
+
+
+body.dark-mode .material-types,
+body.dark-mode .material-comparison,
+body.dark-mode .materials-process {
+    background: #1A211B;
+}
+
+
+/* =========================================================
+   DARK MODE HERO TEXT
+========================================================= */
+
+body.dark-mode .materials-hero h1 {
+    color: #F5F3ED !important;
+}
+
+
+body.dark-mode .materials-hero h1 span {
+    color: #2F5D3A !important;
+}
+
+
+body.dark-mode .materials-hero p {
+    color: #B8C0B8 !important;
+}
+
+
+body.dark-mode .materials-hero .section-label {
+    color: #B7793E !important;
+}
+
+
+body.dark-mode .materials-hero .section-label::before {
+    background: #B7793E;
+}
+
+
+/* =========================================================
+   DARK MODE TEXT
+========================================================= */
+
+body.dark-mode .intro-text h2,
+body.dark-mode .section-heading h2,
+body.dark-mode .material-highlight h3,
+body.dark-mode .material-content h3,
+body.dark-mode .price-card h3,
+body.dark-mode .process-card h3 {
+    color: #FFFFFF !important;
+}
+
+
+body.dark-mode .intro-text h2 span,
+body.dark-mode .section-heading h2 span {
+    color: #B7793E !important;
+}
+
+
+body.dark-mode .intro-text p,
+body.dark-mode .section-heading p,
+body.dark-mode .material-highlight p,
+body.dark-mode .material-content p,
+body.dark-mode .price-card-top p,
+body.dark-mode .process-card p {
+    color: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   DARK MODE CARDS
+========================================================= */
+
+body.dark-mode .material-highlight,
+body.dark-mode .material-card,
+body.dark-mode .price-card,
+body.dark-mode .process-card,
+body.dark-mode .comparison-table-wrapper {
+    background: #202920;
+
+    border-color: #354036;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+body.dark-mode .material-highlight:hover,
+body.dark-mode .material-card:hover,
+body.dark-mode .price-card:hover,
+body.dark-mode .process-card:hover {
+    border-color: #B7793E;
+}
+
+
+/* =========================================================
+   DARK MODE MATERIAL
+========================================================= */
+
+body.dark-mode .material-content {
+    background: #202920;
+}
+
+
+body.dark-mode .material-number,
+body.dark-mode .price-label {
+    color: #B7793E !important;
+}
+
+
+body.dark-mode .material-features span {
+    color: #B7793E !important;
+}
+
+
+/* =========================================================
+   DARK MODE PRICING
+========================================================= */
+
+body.dark-mode .price {
+    color: #B7793E !important;
+}
+
+
+body.dark-mode .price-features li {
+    color: #FFFFFF !important;
+
+    border-color: #354036;
+}
+
+
+body.dark-mode .price-card.featured {
+    border-color: #354036;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   DARK MODE PROCESS
+========================================================= */
+
+body.dark-mode .process-number {
+    background: rgba(183, 121, 62, 0.15);
+
+    color: #B7793E;
+}
+
+
+body.dark-mode .process-icon {
+    color: #B7793E;
+}
+
+
+/* =========================================================
+   DARK MODE COMPARISON
+========================================================= */
+
+body.dark-mode .comparison-table td {
+    border-color: #354036;
+
+    color: #FFFFFF;
+}
+
+
+body.dark-mode .comparison-table tbody tr:hover {
+    background: #202920;
+}
+
+
+body.dark-mode .comparison-table td strong,
+body.dark-mode .comparison-good {
+    color: #B7793E;
+}
+
+
+/* =========================================================
+   DARK MODE BUTTONS
+========================================================= */
+
+body.dark-mode .materials-btn,
+body.dark-mode .price-btn {
+    background: #B7793E !important;
+
+    border-color: #B7793E !important;
+
+    color: #FFFFFF !important;
+}
+
+
+body.dark-mode .materials-btn:hover,
+body.dark-mode .price-btn:hover {
+    background: #945D2D !important;
+
+    border-color: #945D2D !important;
+
+    color: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .materials-hero-content {
+    text-align: right;
+}
+
+
+html[dir="rtl"] .featured-badge {
+    right: auto;
+
+    left: 25px;
+}
+
+
+html[dir="rtl"] .comparison-table {
+    text-align: right;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .materials-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+
+    .process-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+
+    .materials-intro-grid {
+        grid-template-columns: 1fr !important;
+
+        gap: 45px !important;
+    }
+
+
+    .material-highlight {
+        max-width: 550px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .materials-hero {
+        min-height: auto !important;
+
+        padding: 55px 0 !important;
+    }
+
+
+    .materials-hero-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .materials-hero-content {
+        text-align: center;
+    }
+
+
+    .materials-hero .section-label {
+        justify-content: center;
+    }
+
+
+    .materials-hero h1 {
+        margin-left: auto !important;
+
+        margin-right: auto !important;
+    }
+
+
+    .materials-hero p {
+        margin-left: auto !important;
+
+        margin-right: auto !important;
+    }
+
+
+    .materials-hero-image {
+        height: 400px;
+    }
+
+
+    .pricing-grid {
+        grid-template-columns: 1fr !important;
+
+        max-width: 620px;
+
+        margin: 0 auto;
+    }
+
+
+    .price-card {
+        min-height: 510px;
+    }
+
+
+    .price-card.featured {
+        transform: none;
+    }
+
+
+    .price-card.featured:hover {
+        transform: translateY(-8px);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .materials-hero {
+        padding: 40px 0 !important;
+    }
+
+
+    .materials-hero-container {
+        width: 92%;
+
+        gap: 28px;
+    }
+
+
+    .materials-hero h1 {
+        font-size: 42px !important;
+    }
+
+
+    .materials-hero p {
+        font-size: 16px !important;
+    }
+
+
+    .materials-hero-image {
+        height: 300px;
+
+        border-radius: 14px;
+    }
+
+
+    .materials-intro,
+    .material-types,
+    .pricing-section,
+    .material-comparison,
+    .materials-process {
+        padding: 70px 0 !important;
+    }
+
+
+    .materials-grid,
+    .process-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+
+    .material-image {
+        height: 260px !important;
+    }
+
+
+    .material-content {
+        min-height: auto;
+    }
+
+
+    .price-card {
+        min-height: 500px;
+    }
+
+
+    .materials-cta {
+        min-height: 450px !important;
+    }
+
+
+    .comparison-table-wrapper {
+        margin-top: 32px;
+
+        border-radius: 15px;
+    }
+
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 15px;
+    }
+
+
+    /* MOBILE BUTTONS */
+
+    .materials-btn,
+    .price-btn {
+        background: #B7793E !important;
+
+        border-color: #B7793E !important;
+
+        color: #FFFFFF !important;
+    }
+
+
+    .materials-btn:hover,
+    .price-btn:hover {
+        background: #945D2D !important;
+
+        border-color: #945D2D !important;
+
+        color: #FFFFFF !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .materials-hero h1 {
+        font-size: 36px !important;
+    }
+
+
+    .materials-hero p {
+        font-size: 15px !important;
+    }
+
+
+    .materials-btn,
+    .price-btn {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    .material-content {
+        padding: 22px;
+    }
+
+
+    .price-card {
+        padding: 32px 24px;
+    }
+
+
+    .materials-cta h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+
+/* Hero Image Zoom Effect */
+.materials-hero-image {
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.materials-hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.materials-hero-image:hover img {
+    transform: scale(1.05);
+}
