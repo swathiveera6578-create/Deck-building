@@ -341,10 +341,18 @@
     transform: scale(1.06);
 }
 
+
+/* =========================================================
+   STORY BADGE / OUR STORY CTA
+   REVIEW FIX:
+   Keep the badge fully inside the image and prevent
+   the text from becoming cramped or clipped.
+========================================================= */
+
 .story-badge {
     position: absolute;
 
-    right: -25px;
+    right: 25px;
 
     bottom: 30px;
 
@@ -352,7 +360,11 @@
 
     align-items: center;
 
-    gap: 12px;
+    gap: 14px;
+
+    min-width: 230px;
+
+    box-sizing: border-box;
 
     padding: 18px 22px;
 
@@ -380,15 +392,23 @@
 }
 
 .story-badge strong {
+    flex-shrink: 0;
+
     font-size: 32px;
+
+    line-height: 1;
 
     font-family: Georgia, "Times New Roman", serif;
 }
 
 .story-badge span {
+    display: block;
+
+    max-width: 125px;
+
     font-size: 13px;
 
-    line-height: 1.4;
+    line-height: 1.35;
 }
 
 
@@ -1983,7 +2003,7 @@ html[dir="rtl"] .about-label {
 html[dir="rtl"] .story-badge {
     right: auto;
 
-    left: -25px;
+    left: 25px;
 }
 
 html[dir="rtl"] .craft-overlay-card {
@@ -2080,6 +2100,26 @@ html[dir="rtl"] .craft-features div:hover {
     .craft-image img {
         height: 480px;
     }
+
+    /* TABLET STORY BADGE */
+
+    .story-badge {
+        right: 20px;
+
+        bottom: 25px;
+
+        min-width: 220px;
+
+        padding: 16px 20px;
+    }
+
+    .story-badge strong {
+        font-size: 30px;
+    }
+
+    .story-badge span {
+        font-size: 12px;
+    }
 }
 
 
@@ -2168,10 +2208,30 @@ html[dir="rtl"] .craft-features div:hover {
         transform: scale(1.03);
     }
 
+    /* MOBILE STORY BADGE */
+
     .story-badge {
         right: 20px;
 
         bottom: 20px;
+
+        min-width: 220px;
+
+        padding: 15px 18px;
+
+        gap: 12px;
+    }
+
+    .story-badge strong {
+        font-size: 29px;
+    }
+
+    .story-badge span {
+        max-width: 125px;
+
+        font-size: 12px;
+
+        line-height: 1.35;
     }
 
     .difference-grid,
@@ -2371,16 +2431,30 @@ html[dir="rtl"] .craft-features div:hover {
         height: 350px;
     }
 
+    /* SMALL MOBILE STORY BADGE */
+
     .story-badge {
         right: 15px;
 
         bottom: 15px;
 
+        min-width: 205px;
+
         padding: 14px 16px;
+
+        gap: 10px;
     }
 
     .story-badge strong {
         font-size: 27px;
+    }
+
+    .story-badge span {
+        max-width: 115px;
+
+        font-size: 11px;
+
+        line-height: 1.3;
     }
 
     .craft-overlay-card {
